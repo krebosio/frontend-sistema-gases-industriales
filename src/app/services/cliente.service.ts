@@ -10,7 +10,7 @@ export class ClienteService {
   private apiUrl = environment.apiClientes;
 
   listarTodos(): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(`${this.apiUrl}/listar`);
+    return this.http.get<Cliente[]>(`${this.apiUrl}`);
   }
 
   buscarPorId(id: number): Observable<Cliente> {
